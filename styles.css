@@ -1,0 +1,135 @@
+/* NATIVE ELEMENTS */
+body {    
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    font-family: sans-serif;
+}
+
+
+hr {
+    width: 30vw;
+    margin-bottom: 20px;
+}
+
+/* CLASSES AND IDS */
+.calc-wrapper {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 20px 20px black;
+}
+
+.number-operator-wrapper {
+    margin: 20px;
+}
+
+.number-input {
+    width: 100px;
+
+    border: none;
+    border-bottom: 1px solid black;
+
+    font-size: large;
+    text-align: center;
+}
+
+/* Hiding the arrows from the number input field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#operator {
+    margin: 0px 20px;
+
+    font-size: large;
+}
+
+.result-display {
+    background-color: lightgrey;
+
+    height: 50px;
+    max-width: 60vw;
+
+    padding: 0px 20px;
+
+    align-content: center;
+
+    border-radius: 5px;
+}
+
+#result-display {
+    font-size: larger;
+}
+
+.buttons-wrapper {
+    display: flex;
+    gap: 20px;
+
+    padding: 0px 20px;
+}
+
+.button {
+    background-color: black;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding: 10px;
+
+    color: white;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: black;
+
+    transition: background-color .2s ease;
+}
+
+.button-outline {
+    background-color: transparent;
+
+    width: min-content;
+
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.button-outline:hover {
+    background-color: red;
+    color: white;
+
+    transition: background-color .2s ease;
+}

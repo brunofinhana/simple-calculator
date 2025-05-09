@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/client.js"></script>
+    </head>
+    <body>
+        <div class="calc-wrapper">
+            <h1>Simple Calculator</h1>
+
+            <main>
+                <div class="result-display">
+                    <span id="result-display">Your result will be shown here!</span>
+                </div>
+
+                <div class="number-operator-wrapper">
+                    <input type="number" class="number-input" id="n1-input" value="0" />
+
+                    <select name="operators" id="operator">
+                        <option value="add">+</option>
+                        <option value="sub">-</option>
+                        <option value="mul">*</option>
+                        <option value="div">/</option>
+                    </select>
+
+                    <input type="number" class="number-input" id="n2-input" value="0" />
+                </div>
+
+                <div class="buttons-wrapper">
+                    <button class="button-outline" id="clear-btn">C</button>
+                    <button class="button" id="result-btn">Result</button>
+                </div>
+
+            </main>
+
+            <hr>
+
+            <footer>Bruno Finhana | (c) 2025</footer>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
